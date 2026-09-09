@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #f1ece0;
+  color: #211e19;
+  font-family: var(--font-body), Georgia, serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+:focus-visible {
+  outline: 2px solid #b08d57;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 999;
+  background: #211e19;
+  color: #f1ece0;
+  padding: 12px 18px;
+}
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+}
+
+/* Vertical spine title used on shelf volumes */
+.vertical-rl {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* Subtle paper grain overlay for the hero */
+.grain-overlay {
+  background-image: radial-gradient(rgba(241, 236, 224, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+.scrollbar-hairline::-webkit-scrollbar {
+  height: 5px;
+}
+.scrollbar-hairline::-webkit-scrollbar-thumb {
+  background: rgba(33, 30, 25, 0.16);
+}
