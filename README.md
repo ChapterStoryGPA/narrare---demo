@@ -1,87 +1,68 @@
-# NARRĀRE
+<p align="center">
+  <a href="https://nextjs.org">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png">
+      <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png" height="128">
+    </picture>
+    <h1 align="center">Next.js</h1>
+  </a>
+</p>
 
-*Stories to remember.*
+<p align="center">
+  <a aria-label="Vercel logo" href="https://vercel.com">
+    <img src="https://img.shields.io/badge/MADE%20BY%20Vercel-000000.svg?style=for-the-badge&logo=Vercel&labelColor=000">
+  </a>
+  <a aria-label="NPM version" href="https://www.npmjs.com/package/next">
+    <img alt="" src="https://img.shields.io/npm/v/next.svg?style=for-the-badge&labelColor=000000">
+  </a>
+  <a aria-label="License" href="https://github.com/vercel/next.js/blob/canary/license.md">
+    <img alt="" src="https://img.shields.io/npm/l/next.svg?style=for-the-badge&labelColor=000000">
+  </a>
+  <a aria-label="Join the community on GitHub" href="https://github.com/vercel/next.js/discussions">
+    <img alt="" src="https://img.shields.io/badge/Join%20the%20community-blueviolet.svg?style=for-the-badge&logo=Next.js&labelColor=000000&logoWidth=20">
+  </a>
+</p>
 
-The personal archive of Gilang Prasetyo Adjie — built with Next.js (App Router),
-React, TypeScript, Tailwind CSS, and a lightweight React Three Fiber ambient
-particle field in the hero.
+## Getting Started
 
-## Getting started
+Used by some of the world's largest companies, Next.js enables you to create full-stack web applications by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest builds.
 
-```bash
-npm install
-npm run dev
-```
+- Visit our [Learn Next.js](https://nextjs.org/learn) course to get started with Next.js.
+- Visit the [Next.js Showcase](https://nextjs.org/showcase) to see more sites built with Next.js.
 
-Open [http://localhost:3000](http://localhost:3000).
+## Documentation
 
-## Project structure
+Visit [https://nextjs.org/docs](https://nextjs.org/docs) to view the full documentation.
 
-```
-app/
-  layout.tsx        Root layout — fonts, metadata, header/footer shell
-  page.tsx           Home
-  about/page.tsx      About
-  project/page.tsx     Project archive
-  contact/page.tsx    Contact
-  globals.css        Base styles + a few small custom utilities
+## Community
 
-components/          All UI pieces, one responsibility each
-  Header.tsx          Fixed nav, scroll-aware background, mobile menu
-  Footer.tsx
-  Hero.tsx / HeroParticles.tsx   Homepage hero + R3F particle field
-  Shelf.tsx           Interactive "shelf" of project volumes (home)
-  ArchiveList.tsx      Filterable, expandable project archive (/project)
-  AboutNav.tsx         Scroll-spy side nav (/about)
-  ContactChannels.tsx   Contact links with inline icons
-  SectionHead.tsx, DisciplineList.tsx, EditorialList.tsx, NetworkList.tsx
+The Next.js community can be found on [GitHub Discussions](https://github.com/vercel/next.js/discussions) where you can ask questions, voice ideas, and share your projects with other people.
 
-lib/
-  site-config.ts      *** Edit this first *** — name, tagline, email, phone,
-                       social links, ARTICLE_URL, PRODUCT_URL, nav structure
-  projects.ts         Project archive data — add/edit/remove entries here.
-                       Each project can later grow a `caseStudy` array
-                       without changing the data shape.
-  content.ts          Journal previews, workshop previews, discipline list,
-                       and the eight About-page entries.
+To chat with other community members you can join the Next.js [Discord](https://nextjs.org/discord) server.
 
-public/images/        logo.png, profile.jpg — replace these two files
-                       directly to update the mark and portrait everywhere.
-```
+Do note that our [Code of Conduct](https://github.com/vercel/next.js/blob/canary/CODE_OF_CONDUCT.md) applies to all Next.js community channels. Users are **highly encouraged** to read and adhere to them to avoid repercussions.
 
-## Editing your content
+## Contributing
 
-1. **Personal info & links** — `lib/site-config.ts`. This is the single
-   source of truth for email, phone, social URLs, the external Article and
-   Product destinations, and the primary nav. Two values are intentionally
-   left as placeholders and should be replaced before launch:
-   - `articleUrl` → your WordPress or Medium URL
-   - `social.discord` → your Discord invite/URL
-2. **Projects** — `lib/projects.ts`. All entries are sample/placeholder
-   copy with no invented results, clients, or credentials. Replace freely;
-   the first six projects automatically populate the homepage shelf.
-3. **About page copy** — `lib/content.ts` → `aboutEntries`.
-4. **Journal / Workshop previews** — `lib/content.ts` → `journal`,
-   `workshop`.
-5. **Logo & photo** — replace `public/images/logo.png` and
-   `public/images/profile.jpg` with your own files of the same name (any
-   aspect ratio works; the layout crops the portrait to 4:5).
+Contributions to Next.js are welcome and highly appreciated. However, before you jump right into it, we would like you to review our [Contribution Guidelines](/contributing.md) to make sure you have a smooth experience contributing to Next.js.
 
-## Design system
+### Good First Issues:
 
-Colors, and the display/body font pairing (Cormorant Garamond + EB
-Garamond, loaded via `next/font/google`) are defined in
-`tailwind.config.ts` and `app/layout.tsx`. Reduced-motion preferences are
-respected globally, including in the R3F particle field.
+We have a list of **[good first issues](https://github.com/vercel/next.js/labels/good%20first%20issue)** that contain bugs that have a relatively limited scope. This is a great place for newcomers and beginners alike to get started, gain experience, and get familiar with our contribution process.
 
-## Build
+## Authors
 
-```bash
-npm run build
-npm run start
-```
+A list of the original co-authors of Next.js that helped bring this amazing framework to life!
 
-## Deploying
+- Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens))
+- Naoyuki Kanezawa ([@nkzawa](https://twitter.com/nkzawa))
+- Guillermo Rauch ([@rauchg](https://twitter.com/rauchg))
+- Arunoda Susiripala ([@arunoda](https://twitter.com/arunoda))
+- Tony Kovanen ([@tonykovanen](https://twitter.com/tonykovanen))
+- Dan Zajdband ([@impronunciable](https://twitter.com/impronunciable))
 
-This is a standard Next.js app — deploy to Vercel, Netlify, or any Node
-host. No environment variables are required.
+---
+
+## Security
+
+If you believe you have found a security vulnerability in Next.js, we encourage you to **_responsibly disclose this and NOT open a public issue_**. We will investigate all legitimate reports. Email `security@vercel.com` to disclose any security vulnerabilities. Alternatively, you can visit this [link](https://vercel.com/security) to know more about Vercel's security and report any security vulnerabilities.
